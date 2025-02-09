@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Semillero Digital - Intro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Barra de navegación principal -->
+    <nav class="navbar" id="inicio">
+        <!-- Logo -->
+        <img src="imgs/logo2-removebg-preview.png" width="18%">
+
+        <!-- Menú de navegación principal -->
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobrenosotros">Sobre Nosotros</a></li>
+            <li><a href="#estudiantes">Estudiantes</a></li>
+            <li><a href="#oferta">Oferta Académica</a></li>
+            <li><a href="#reseñas">Reseñas</a></li>
+        </ul>
+
+        <!-- Icono de menú para móviles -->
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    </nav>
+
+    <!-- Menú lateral para dispositivos móviles -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#" onclick="toggleMenu()">✖</a> <!-- Botón para cerrar el menú -->
+        <a href="#inicio">Inicio</a>
+        <a href="#sobrenosotros">Sobre Nosotros</a>
+        <a href="#estudiantes">Estudiantes</a>
+        <a href="#oferta">Oferta Académica</a>
+        <a href="#reseñas">Reseñas</a>
+    </div>
+    
+    <!-- Sección 1: Inicio -->
+    <section class="scroll-hidden">
+    <header class="section1" id="Inicio">
+        <div class="text1-inicio">
+            <h1>Creando programadores de alto impacto; jóvenes capaces de programar su futuro.</h1>
+            <p>Una iniciativa que surge del corazón de la Política Nacional de Innovación 2030 de la Óptica, con un objetivo claro: preparar a la nueva generación en diversas tecnologías para enfrentar los desafíos de la Cuarta Revolución Industrial.</p>
+        </div>
+
+        <div class="img1-inicio">
+            <div class="imagen-izquierda">
+            <img src="imagenes INTRO/54198550983_5a3514f586_c.jpg" alt="Imagen introductoria" >
+            </div>
+            
+            <div class="imagen-derecha">
+            <img src="imagenes INTRO/54036463614_175b34513f_c.jpg" alt="Imagen introductoria">
+            <img src="imagenes INTRO/54035274032_86d7c52d80_c.jpg" alt="Imagen introductoria">
+       </div>
+        </div>
+    </header>
+    </section>
+
+    <!-- Sección 2: Sobre Nosotros -->
+    <section class="scroll-hidden" id="sobrenosotros">
+    <header class="section2" id="SobreNosotros">
+        <div class="img-section2">
+            <img src="imagenes INTRO/7.png" alt="Logo">
+                    </div>
+
+        <div class="text1-section2">
+            <p style="color: #51ADEE;">Acerca de nosotros</p>
+            <h1 style="margin-top: -4%;">Adquiere habilidades de programación con nosotros</h1>
+            <p>Estamos cambiando la vida de los jóvenes a través de Semilleros INTRO, un programa de capacitación tecnológica que impacta la vida de 100 jóvenes en 6 meses. Cada estudiante tiene una historia que contar y sueños que cumplir.</p>
+            <!-- Características clave del programa -->
+            <div class="container">
+                <div class="item">
+                    <div class="circle green"></div>
+                    <span>Educación</span>
+                </div>
+                <div class="item">
+                    <div class="circle red"></div>
+                    <span>Innovación</span>
+                </div>
+                <div class="item">
+                    <div class="circle blue"></div>
+                    <span>Transformación</span>
+                </div>
+                <div class="item">
+                    <div class="circle lightblue"></div>
+                    <span>Futuro</span>
+                </div>
+            </div>
+        </div>    
+    </header>
+    </section>
+
+    <!-- Sección 3: Estudiantes -->
+    <section class="scroll-hidden" id="estudiantes">
+    <header class="section3">
+        <h1>Estudiantes</h1>
+        <div class="slider">
+            <!-- Tarjeta de cada estudiante -->
+            <div class="card" style="background-color: #D9B3FF;">
+                <h2>Johandy Rodriguez</h2>
+                <p class="role">Desarrollador web</p>
+                <img src="imagenes INTRO/Yohandy.png" alt="Johandy Rodriguez">
+            </div>
+
+            <div class="card" style="background-color: #66B2FF;">
+                <h2>Claudia G.</h2>
+                <p class="role">Ingeniero de Software</p>
+                <img src="imagenes INTRO/claudia.png" alt="Cludia">
+            </div>
+
+            <div class="card" style="background-color: #0066CC;">
+                <h2>Etní Santana</h2>
+                <p class="role">Marketing Digital</p>
+                <img src="imagenes INTRO/Karla.png" alt="Etní Santana">
+            </div>
+
+            <div class="card" style="background-color: #7FFF57;">
+                <h2>Nashla Sena</h2>
+                <p class="role">Diseñadora UX/UI</p>
+                <img src="imagenes INTRO/4-removebg-preview.png" alt="Nashla Sena">
+            </div>
+        </div>
+    </header>
+    </section>
+
+    <!-- Sección 4: Oferta Académica -->
+    <section class="scroll-hidden" id="oferta">
+    <h1>Oferta Académica</h1>
+    <header class="section4-container">
+        <!-- Botón para navegar entre cursos -->
+        <button class="prev">&#10094;</button>
+
+        <div class="section4">
+            <div class="slider2">
+                <!-- Tarjetas de oferta académica -->
+                <div class="card-section4" style="background-color:#51ADEE;">
+                    <img src="imagenes INTRO/programacion.png" alt="Programación">
+                    <h4>Programación</h4>
+                    <p>Clases intensivas con 10 a 15 horas semanales de teoría y práctica. Aprende a desarrollar aplicaciones y resolver problemas usando diversos lenguajes de programación.
+
+                    </p>
+                </div>
+
+                <div class="card-section4" style="background-color: #84F25C;">
+                    <img src="imagenes INTRO/maths.png" alt="Matematicas">
+                    <h4>Matematicas</h4>
+                    <p>De 8 a 12 horas semanales para fortalecer el pensamiento lógico y resolver problemas prácticos en álgebra, geometría, estadística y más.</p>
+                </div>
+
+                <div class="card-section4" style="background-color: #D0BCFE;">
+                    <img src="imagenes INTRO/comunicacion.png" alt="Comunicacion funcional">
+                    <h4>Comunicacion funcional</h4>
+                    <p>6 a 10 horas semanales para mejorar tu expresión oral y escrita, enfocándote en redacción, argumentación y presentación efectiva.                    </p>
+                </div>
+
+                <div class="card-section4" style="background-color: #ff5757;">
+                    <img src="imagenes INTRO/languages.png" alt="Ingles tecnico">
+                    <h4>Ingles tecnico</h4>
+                    <p>8 a 12 horas semanales enfocadas en el aprendizaje del inglés aplicado a contextos profesionales, con vocabulario técnico y práctica conversacional.</p>
+                </div>
+
+                <div class="card-section4" style="background-color: #da9795;">
+                    <img src="imagenes INTRO/bienestar.png" alt="Bienestar">
+                    <h4>Bienestar</h4>
+                    <p>de 4 a 6 horas semanales dedicadas al desarrollo personal, manejo del estrés y creación de hábitos saludables para un equilibrio integral.</p>
+                </div>
+
+                <div class="card-section4" style="background-color: #82ceea;">
+                    <img src="imagenes INTRO/civica.png" alt="Civica">
+                    <h4>Civica</h4>
+                    <p>5 a 8 horas semanales para entender tus derechos, deberes y fomentar el pensamiento crítico a través de debates y análisis sociales.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botón siguiente -->
+        <button class="next">&#10095;</button>
+    </header>
+    </section>
+
+    <section class="scroll-hidden" id="reseñas">
+    <h1 style="text-align: center;">Reseñas de estudiantes</h1>
+    <div class="reviews-container">
+        <div class="reviews" id="reviews">
+            <div class="review">
+              <div class="stars">★★★★★</div>
+              <p>Gracias a Semilleros INTRO, descubrí mi pasión por la programación. Ahora me siento preparado para enfrentar cualquier reto tecnológico.</p>
+              <h4>Carlos Méndez</h4>
+              <small>1 year ago</small>
+              <img src="https://via.placeholder.com/50" alt="Carlos Méndez">
+            </div>
+            <div class="review">
+              <div class="stars">★★★★★</div>
+              <p>Este programa cambió mi vida. No solo aprendí a programar, sino que también gané la confianza para crear mis propios proyectos.</p>
+              <h4>Laura Sánchez</h4>
+              <small>2 years ago</small>
+              <img src="https://via.placeholder.com/50" alt="Laura Sánchez">
+            </div>
+            <div class="review">
+              <div class="stars">★★★★★</div>
+              <p>Las clases son dinámicas y los mentores están siempre dispuestos a ayudar. En solo unos meses, mis habilidades mejoraron increíblemente.</p>
+              <h4>Javier Torres</h4>
+              <small>2 years ago</small>
+              <img src="https://via.placeholder.com/50" alt="Javier Torres">
+            </div>
+            <div class="review">
+              <div class="stars">★★★★★</div>
+              <p>Semilleros INTRO no solo enseña programación, también te motiva a pensar en grande. Ahora sé que puedo programar mi propio futuro.</p>
+              <h4>Andrea Gómez</h4>
+              <small>6 months ago</small>
+              <img src="https://via.placeholder.com/50" alt="Andrea Gómez">
+            </div>
+            <div class="review">
+              <div class="stars">★★★★★</div>
+              <p>Nunca imaginé que en 6 meses aprendería tanto. Este programa me dio las herramientas y la inspiración para seguir creciendo.</p>
+              <h4>Miguel Rodríguez</h4>
+              <small>3 months ago</small>
+              <img src="https://via.placeholder.com/50" alt="Miguel Rodríguez">
+            </div>
+            <div class="review">
+              <div class="stars">★★★★★</div>
+              <p>La mejor decisión que tomé fue unirme a Semilleros INTRO. Hoy me siento más cerca de cumplir mis sueños en el mundo de la tecnología.</p>
+              <h4>Paula Fernández</h4>
+              <small>1 month ago</small>
+              <img src="https://via.placeholder.com/50" alt="Paula Fernández">
+            </div>
+          </div>
+          
+    </div>
+    </section>
+    
+    <section class="scroll-hidden">
+      <footer class="footer">
+        <div class="logo">
+          <img src="imgs/logo2-removebg-preview.png" alt="Logo">
+          
+        </div>
+        <div class="menu">
+          <h3>MENU</h3>
+          <ul>
+            <li><a href="#">Acerca de Intro</a></li>
+            <li><a href="#">Estudiantes</a></li>
+            <li><a href="#">Oferta académica</a></li>
+            <li><a href="#">Reseñas</a></li>
+            <li><a href="#">Colaboradores</a></li>
+          </ul>
+        </div>
+        <div class="links">
+          <h3>Enlaces de interés</h3>
+          <ul>
+            <li><a href="#">Ogtic</a></li>
+            <li><a href="#">Recursos académicos</a></li>
+            <li><a href="#">Trabaja con nosotros</a></li>
+          </ul>
+        </div>
+        <div class="newsletter">
+          <h3>BOLETÍN INFORMATIVO</h3>
+          <input type="text" placeholder="Nombre">
+          <input type="text" placeholder="Apellido">
+          <input type="email" placeholder="Correo electrónico">
+          <button>SUSCRÍBETE</button>
+        </div>
+      </footer>
+    </section>
+
+
+    <!-- Script para funcionalidades JS -->
+    <script src="app.js"></script>
+</body>
+</html>

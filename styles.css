@@ -1,0 +1,577 @@
+/* ---- Estilos Generales ---- */
+body {
+   
+    margin: 0 12% 0 11%; /* Márgenes laterales */
+    padding: 0;
+    font-family: Arial, sans-serif;    
+}
+
+
+/* ---- Tipografía Global ---- */
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 240%;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 150%;
+    text-align: justify;
+}
+
+a{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ---- Barra de Navegación ---- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: black;
+}
+
+/* ---- Menú de Navegación ---- */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-size: 120%;
+    font-family: 'SF-sencilla';
+    font-weight: 800;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+/* ---- Enlaces del Menú ---- */
+.nav-links a {
+    position: relative;
+    color: black;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: color 0.3s ease-in-out;
+    font-weight: 100;
+}
+
+.nav-links a:hover {
+    color: #51ADEE;
+}
+
+/* ---- Línea Animada en Hover ---- */
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background: #51ADEE;
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+    opacity: 1;
+}
+
+/* ---- Icono del Menú (Móviles) ---- */
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+/* ---- Menú Lateral en Móviles ---- */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background: #1369CC;
+    padding-top: 10px;
+    transition: right 0.3s;
+    z-index: 2;
+}
+
+.mobile-menu a {
+    display: block;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.mobile-menu a:hover {
+    background: #51ADEE;
+}
+
+/* ---- Responsive (Móviles) ---- */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .navbar img {
+        width: 40%;
+    }
+
+    h1 {
+        font-size: 200%;
+    }
+    
+    p {
+        font-size: 110%;
+    }
+}
+
+/* ---- Estilos para Secciones ---- */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ---- Círculos de Colores ---- */
+.circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.green { background: #7FFF57; }
+.red { background: #FF5C72; }
+.blue { background: #0D6EFD; }
+.lightblue { background: #51A7F9; }
+
+/* ---- Diseño Secciones (Responsivo) ---- */
+.section1, .section2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    width: 90%;
+    max-width: 1000px;
+    padding: 1%;
+}
+
+
+.img1-inicio {
+  width: 550%;
+  height: 100%;
+  display: flex;
+    column-gap: 10px;
+    gap: 10px; /* Espacio entre los cuadros */
+    width: 120%; /* MÃ¡ximo ancho del contenedor */
+    max-width: 1000px; /* Ancho mÃ¡ximo fijo */
+    padding: 1%;
+}
+
+.imagen-izquierda img{
+  width: 210%;
+  border-radius: 5%;
+}
+
+.imagen-derecha img{
+  width: 65%;
+  margin-left: 37%;
+  padding: 2%;
+  border-radius: 5%;
+}
+
+.img-section2{
+    display: flex;
+    column-gap: 10px;
+    gap: 10px; /* Espacio entre los cuadros */
+    width: 120%; /* MÃ¡ximo ancho del contenedor */
+    max-width: 1100px; /* Ancho mÃ¡ximo fijo */
+    padding: 1%;
+}
+
+.img-section2 img{
+  width: 100%;
+  margin-left: -13%;
+  
+}
+
+
+/* ---- Carrusel de Estudiantes ---- */
+.slider {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    transition: all 0.5s ease-in-out;
+    margin-left: -3%;
+    margin-bottom: ;
+}
+
+/* ---- Tarjetas de Estudiantes ---- */
+.card {
+    position: relative;
+    width: 200px;
+    height: 350px;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.card h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* ---- Ocultar texto de rol por defecto ---- */
+.card .role {
+    background: #3498db;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    display: none;
+}
+
+/* ---- Imágenes de las tarjetas ---- */
+.card img {
+    width: 200%;
+    height: auto;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: -55%;
+}
+
+/* ---- Efectos al Expandir Tarjeta ---- */
+.card.expanded, .card:hover {
+    width: 250px;
+    height: 350px;
+}
+
+.card.minimized {
+    width: 120px;
+}
+
+/* ---- Mostrar rol al expandir ---- */
+.card.expanded .role, .card:hover .role {
+    display: inline-block;
+}
+
+.card img:hover{
+ margin-top: -27%;
+}
+
+/* ---- Responsive para Tarjetas ---- */
+@media (max-width: 768px) {
+    .slider {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .card.minimized {
+        width: 100%;
+    }
+
+    .img-section2 img{
+      width: 115%;
+    }
+    body{
+        
+    }
+}
+
+/* ---- Contenedor del Slider de Oferta Académica ---- */
+.section4-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    max-width: 1200px;
+    margin: auto;
+    margin-left: -5%;
+}
+
+.section4 {
+    overflow: hidden;
+    width: 90%;
+}
+
+.slider2 {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* ---- Tarjetas de Oferta Académica ---- */
+.card-section4 {
+    width: 400px;
+    height: 390px;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    flex-shrink: 0;
+}
+
+.card-section4 img {
+    width: 55%;
+    margin-left: 18%;
+    margin-top: 7%;
+}
+
+.card-section4 h4 {
+    background-color: #7FFF57;
+    border-radius: 3px;
+    max-width:35%;
+    padding: 5px 10px;
+    text-align: center;
+    
+}
+
+.card-section4 p{
+    font-size: 100%;
+    margin-top: -2%;
+}
+
+/* ---- Botones de Navegación ---- */
+button.prev, button.next {
+    position: absolute;
+    color: rgb(151, 128, 128);
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 5%;
+}
+
+button.prev { left: 10px; }
+button.next { right: 10px; }
+
+button:hover {
+    background-color: rgba(170, 162, 162, 0.8);
+}
+
+/* ---- Responsive para Slider ---- */
+@media (max-width: 768px) {
+    .section4 {
+        width: 100%;
+    }
+
+    .card-section4 {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+
+
+
+.reviews-container {
+  width: 100%;
+  max-width: 1000px;
+  overflow: hidden;
+  position: relative;
+  display: flexbox;
+justify-content: center;
+margin-bottom: 5%;
+
+}
+
+.reviews {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.review {
+  min-width: 250px;
+  max-width: 250px;
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 15px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.review h4 {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.review p {
+  margin: 10px 0;
+  color: #555;
+  font-size: 14px;
+}
+
+.review img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+}
+
+.stars {
+  color: #fbc02d;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .review {
+    min-width: 200px;
+    max-width: 200px;
+    padding: 10px;
+  }
+
+  .review h4 {
+    font-size: 14px;
+  }
+
+  .review p {
+    font-size: 12px;
+  }
+
+  .stars {
+    font-size: 12px;
+  }
+
+  .review img {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+
+
+.footer {
+    background-color: #dbcccc75;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: -14.8%;
+    margin-right: -15.6%;
+    margin-bottom: ;
+  }
+
+  .footer .logo {
+    flex: 1;
+    min-width: 150px;
+  }
+
+  .footer .logo img {
+    max-width: 70%;
+    height: auto;
+    margin-left: 6%;
+  }
+
+  .footer .menu, .footer .links, .footer .newsletter {
+    flex: 1;
+    min-width: 150px;
+    margin: 10px;
+  }
+
+  .footer h3 {
+    margin-bottom: 15px;
+    margin-left: 12%;
+    color: #000;
+  }
+
+  .footer ul {
+    list-style: none;
+  }
+
+  .footer ul li {
+    margin-bottom: 10px;
+  }
+
+  .footer ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  .footer ul li a:hover {
+    text-decoration: underline;
+  }
+
+  .newsletter input[type="text"], .newsletter input[type="email"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .newsletter button {
+    background-color: #42a5f5;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .newsletter button:hover {
+    background-color: #1e88e5;
+  }
+
+  .newsletter input:hover{
+    background-color: ;
+    border: solid #3498db;
+  }
+
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      align-items: center;
+    }
+    .footer .menu, .footer .links, .footer .newsletter {
+      text-align: center;
+    }
+  }
+
+
+  /* Inicialmente los elementos estarán ocultos y con opacidad 0 */
+.scroll-hidden {
+    opacity: 0;
+    transform: translateY(20px);  /* Desplaza un poco hacia abajo */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; 
+}
+
+/* Cuando el elemento entra en la vista, esta clase lo hace visible */
+.scroll-show {
+    opacity: 1;
+    transform: translateY(0);
+}
